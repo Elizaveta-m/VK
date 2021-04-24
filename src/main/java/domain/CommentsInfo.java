@@ -4,13 +4,9 @@ public class CommentsInfo {
     private String commentsInfo;
     private int count;
     private boolean canPost;
-
-    private String commentUrl;
-    private String threadUrl;
-    private int userId;
-
-    private String userAvatarUrl;
-    private String stickerUrl;
+    private boolean groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
 
     public String getCommentsInfo() {
         return commentsInfo;
@@ -36,43 +32,27 @@ public class CommentsInfo {
         this.canPost = canPost;
     }
 
-    public String getCommentUrl() {
-        return commentUrl;
+    public boolean isGroupsCanPost() {
+        return groupsCanPost;
     }
 
-    public void setCommentUrl(String commentUrl) {
-        this.commentUrl = commentUrl;
+    public void setGroupsCanPost(boolean groupsCanPost) {
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public String getThreadUrl() {
-        return threadUrl;
+    public boolean isCanClose() {
+        return canClose;
     }
 
-    public void setThreadUrl(String threadUrl) {
-        this.threadUrl = threadUrl;
+    public void setCanClose(boolean canClose) {
+        this.canClose = canClose;
     }
 
-    public int getUserId() {
-        return userId;
+    public boolean isCanOpen() {
+        return canOpen;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public String getUserAvatarUrl() {
-        return userAvatarUrl;
-    }
-
-    public void setUserAvatarUrl(String userAvatarUrl) {
-        this.userAvatarUrl = userAvatarUrl;
-    }
-
-    public String getStickerUrl() {
-        return stickerUrl;
-    }
-
-    public void setStickerUrl(String stickerUrl) {
-        this.stickerUrl = stickerUrl;
+    public void setCanOpen(boolean canOpen) {
+        this.canOpen = canOpen;
     }
 }
